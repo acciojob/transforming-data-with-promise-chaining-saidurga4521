@@ -5,19 +5,19 @@ const btn=document.getElementById('btn')
 btn.addEventListener('click',()=>{
 	const value=Number(valueE1.value)
 	normal(value).then((res)=>{
-		outputE1.innerText=`Result:${res}`;
+		outputE1.innerText=`Result: ${res}`;
 		return multiply(res);
 	}).then((res)=>{
-		outputE1.innerText=`Result:${res}`;
+		outputE1.innerText=`Result: ${res}`;
 		return subtract(res);
 	}).then((res)=>{
-		outputE1.innerText=`Result:${res}`;
+		outputE1.innerText=`Result: ${res}`;
 		return divide(res);
 	}).then((res)=>{
-		outputE1.innerText=`Result:${res}`;
+		outputE1.innerText=`Result: ${res}`;
 		return add10(res);
 	}).then((res)=>{
-		outputE1.innerText=`Final Result:${res}`;
+		outputE1.innerText=`Final Result: ${res}`;
 	})
 	function normal(value){
 		return new Promise((resolve)=>{
